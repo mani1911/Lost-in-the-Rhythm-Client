@@ -1,0 +1,17 @@
+.dance-container{
+    font-family: Quicksand;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-color: rgb(13, 13, 54);
+    background-image: url("/assets/space-theme.jpg");
+    padding: 5%;
+}
+
+.main-container{
+    background-image: linear-gradient(rgb(224, 217, 217), rgb(224, 217, 217));
+    background-size: 1px 90%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

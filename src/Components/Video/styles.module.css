@@ -1,0 +1,26 @@
+.video-card{
+    width: 100%;
+    min-width: 500px;
+}
+
+.thumbnail{
+    width: 200px;
+    height: 200px;
+}
+
+.video-card {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.video-card::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+@media only screen and (max-width: 1000px) {
+    .video-card {
+      flex-direction: column;
+      height: 500px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
