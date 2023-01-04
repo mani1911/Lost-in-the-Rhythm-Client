@@ -16,7 +16,9 @@ const Search = () => {
     const res = await axios.get(
       `${YOUTUBE_DATA_URI}key=${
         import.meta.env.VITE_APP_YOUTUBE_API_KEY
-      }&part=snippet&type=video&maxResults=15&q=${keyword}`
+      }&part=snippet&type=video&maxResults=15&q=${
+        keyword != "" ? keyword : "solo dance"
+      }`
     );
     setVideos(res.data.items);
     console.log(videos);

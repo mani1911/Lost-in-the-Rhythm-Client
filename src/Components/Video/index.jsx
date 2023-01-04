@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "./styles.module.css";
+import { Link } from "react-router-dom";
 const Video = ({ title, desc, thumbnail }) => {
   console.log(thumbnail);
   return (
-    <div
+    <Link
+      to="/dance"
       className={`${styles["video-card"]} min-h-[200px] rounded-sm flex bg-gradient-to-r from-black to-zinc-900 overflow-scroll`}
     >
       <img src={thumbnail.url} className={styles.thumbnail}></img>
@@ -11,7 +13,7 @@ const Video = ({ title, desc, thumbnail }) => {
         <p className="font-bold text-2xl mb-1">{title}</p>
         <p>{desc}</p>
       </div>
-    </div>
+    </Link>
   );
 };
 
